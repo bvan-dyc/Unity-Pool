@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - tower
+  - empty
+  - tile
+  - spawner
+  - playerCore
+  - bot
+  - road
+  - boss
+  - flybot
+  - hud_gatling_dmg
+  - hud_gatling_reload
+  - hud_gatling_range
+  - hud_gatling_cost
+  - hud_rocket_reload
+  - hud_canon_cost
+  - hud_rocket_dmg
+  - hud_canon_dmg
+  - hud_canon_reload
+  - hud_rocket_cost
+  - hud_rocket_range
+  - hud_canon_range
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1877342939
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 351379301
+    locked: 0

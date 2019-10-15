@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Unit
+  - Tile
+  - Platform
+  - Exit
+  - Yellow
+  - Blue
+  - Red
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - YellowPlayer
+  - RedPlayer
+  - BluePlayer
+  - Yellow
+  - Red
+  - Blue
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 3590406219
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
