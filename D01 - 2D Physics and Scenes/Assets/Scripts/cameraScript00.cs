@@ -14,7 +14,7 @@ public class cameraScript00 : MonoBehaviour
 	void Start()
 	{
 		playerid = 1;
-		playerA.GetComponent<playermove01>().enableControl();
+		playerA.GetComponent<playermove00>().enableControl();
 	}
 
 	// Update is called once per frame
@@ -23,23 +23,23 @@ public class cameraScript00 : MonoBehaviour
 		if (Input.GetKey("1"))
 		{
 			playerid = 1;
-			playerA.GetComponent<playermove01>().enableControl();
-			playerB.GetComponent<playermove01>().disableControl();
-			playerC.GetComponent<playermove01>().disableControl();
+			playerA.GetComponent<playermove00>().enableControl();
+			playerB.GetComponent<playermove00>().disableControl();
+			playerC.GetComponent<playermove00>().disableControl();
 		}
 		if (Input.GetKey("2"))
 		{
 			playerid = 2;
-			playerA.GetComponent<playermove01>().disableControl();
-			playerB.GetComponent<playermove01>().enableControl();
-			playerC.GetComponent<playermove01>().disableControl();
+			playerA.GetComponent<playermove00>().disableControl();
+			playerB.GetComponent<playermove00>().enableControl();
+			playerC.GetComponent<playermove00>().disableControl();
 		}
 		if (Input.GetKey("3"))
 		{
 			playerid = 3;
-			playerA.GetComponent<playermove01>().disableControl();
-			playerB.GetComponent<playermove01>().disableControl();
-			playerC.GetComponent<playermove01>().enableControl();
+			playerA.GetComponent<playermove00>().disableControl();
+			playerB.GetComponent<playermove00>().disableControl();
+			playerC.GetComponent<playermove00>().enableControl();
 		}
 		if (playerid == 1)
 			transform.position = new Vector3(playerA.transform.position.x, playerA.transform.position.y, transform.position.z);
@@ -47,9 +47,5 @@ public class cameraScript00 : MonoBehaviour
 			transform.position = new Vector3(playerB.transform.position.x, playerB.transform.position.y, transform.position.z);
 		if (playerid == 3)
 			transform.position = new Vector3(playerC.transform.position.x, playerC.transform.position.y, transform.position.z);
-		if (Input.GetKey("r"))
-		{
-			SceneManager.LoadScene(1, LoadSceneMode.Single);
-		}
 	}
 }

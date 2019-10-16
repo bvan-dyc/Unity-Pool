@@ -6,17 +6,6 @@ public class colorChanger : MonoBehaviour
 {
 	public GameObject objectToChange;
 	public SpriteRenderer spriteToChange;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
 	void OnTriggerEnter2D(Collider2D other)
 	{
@@ -28,11 +17,11 @@ public class colorChanger : MonoBehaviour
 	Color getNewColor(string tag)
 	{
 		if (tag == "Red")
-			return Color.red;
-		if (tag == "Blue")
-			return Color.blue;
-		if (tag == "Yellow")
-			return Color.yellow;
+			return (new Color32(244, 57, 57, 255));
+		else if (tag == "Blue")
+			return (new Color32(8,86,152, 255));
+		else if (tag == "Yellow")
+			return (new Color32(255, 237, 0, 255));
 		else
 			return Color.white;
 	}

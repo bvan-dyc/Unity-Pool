@@ -301,7 +301,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
@@ -859,8 +859,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1886299576}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.8805978, y: -2.9429903, z: 0.017193802}
-  m_LocalScale: {x: 6, y: 6, z: 6}
+  m_LocalPosition: {x: 3.039, y: -2.921, z: 0.017193802}
+  m_LocalScale: {x: 3.650208, y: 1.91664, z: 6}
   m_Children: []
   m_Father: {fileID: 498822286}
   m_RootOrder: 0
@@ -1106,7 +1106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2459828504998952850}
   - component: {fileID: 2459828504998952863}
-  - component: {fileID: 2459828504998952860}
+  - component: {fileID: 2459828504998952852}
   - component: {fileID: 2459828504998952861}
   m_Layer: 9
   m_Name: Yellow
@@ -1115,7 +1115,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2459828504998952860
+--- !u!114 &2459828504998952852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1124,16 +1124,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 2459828504998952851}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d8e1ae56a91b14b80b4c1f67129ce7, type: 3}
+  m_Script: {fileID: 11500000, guid: d98cf6418024df24c8279ac73698b8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
   jumpPower: 6
   groundLayers:
     serializedVersion: 2
-    m_Bits: 3840
+    m_Bits: 3328
   groundCheck: {fileID: 2459828505832379361}
-  escaped: 0
 --- !u!61 &2459828504998952861
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1176,7 +1175,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 2
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8c0615401630954995ed34eeb09ce8f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -1448,30 +1447,11 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8c0615401630954995ed34eeb09ce8f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2459828506613176065
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2459828506613176068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d8e1ae56a91b14b80b4c1f67129ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 4
-  jumpPower: 5
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 3840
-  groundCheck: {fileID: 2459828505228936853}
-  escaped: 0
 --- !u!212 &2459828506613176067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1531,7 +1511,7 @@ GameObject:
   - component: {fileID: 2459828506613176071}
   - component: {fileID: 2459828506613176067}
   - component: {fileID: 2459828506613176064}
-  - component: {fileID: 2459828506613176065}
+  - component: {fileID: 2459828506613176069}
   - component: {fileID: 2459828506613176070}
   m_Layer: 10
   m_Name: Red
@@ -1540,6 +1520,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2459828506613176069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2459828506613176068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cf6418024df24c8279ac73698b8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4
+  jumpPower: 5
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 2816
+  groundCheck: {fileID: 2459828505228936853}
 --- !u!61 &2459828506613176070
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1592,7 +1590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2459828506705261197}
   - component: {fileID: 2459828506705261198}
-  - component: {fileID: 2459828506705261199}
+  - component: {fileID: 2459828506705261187}
   - component: {fileID: 2459828506705261196}
   m_Layer: 11
   m_Name: Blue
@@ -1601,6 +1599,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2459828506705261187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2459828506705261186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d98cf6418024df24c8279ac73698b8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpPower: 7
+  groundLayers:
+    serializedVersion: 2
+    m_Bits: 1792
+  groundCheck: {fileID: 2459828504638706633}
 --- !u!61 &2459828506705261196
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1659,27 +1675,8 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: d8c0615401630954995ed34eeb09ce8f, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &2459828506705261199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2459828506705261186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79d8e1ae56a91b14b80b4c1f67129ce7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpPower: 7
-  groundLayers:
-    serializedVersion: 2
-    m_Bits: 3840
-  groundCheck: {fileID: 2459828504638706633}
-  escaped: 0

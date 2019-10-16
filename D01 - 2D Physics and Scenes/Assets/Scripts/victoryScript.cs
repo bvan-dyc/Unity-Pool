@@ -8,6 +8,7 @@ public class victoryScript : MonoBehaviour
 	public GameObject playerB;
 	public GameObject playerC;
 	private bool victory = false;
+	public bool isFinalScene = false;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -22,12 +23,17 @@ public class victoryScript : MonoBehaviour
 								playerC.GetComponent<playermove01>().escaped)
 		{
 			Debug.Log("Congratulations! You cleared the puzzle!");
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
+			if (!isFinalScene)
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1, LoadSceneMode.Single);
 			victory = true;
 		}
 		if (victory = true && !(playerA.GetComponent<playermove01>().escaped && 
 								playerB.GetComponent<playermove01>().escaped && 
 								playerC.GetComponent<playermove01>().escaped))
 			victory = false;
+		if (Input.GetKey("r"))
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+		}
 	}
 }

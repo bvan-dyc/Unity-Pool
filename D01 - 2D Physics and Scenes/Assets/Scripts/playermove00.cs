@@ -6,14 +6,14 @@ public class playermove00 : MonoBehaviour
 	public float speed;
 	private bool canControl = false;
 	public float jumpPower;
-	public LayerMask groundLayer;
+	public LayerMask groundLayers;
 	public Transform groundCheck;
 	private const float GROUNDED_RADIUS = 0.3f;
 	private Rigidbody2D rbody;
 
 	bool isGrounded()
 	{
-		return Physics2D.OverlapCircle(groundCheck.position, GROUNDED_RADIUS, groundLayer);
+		return Physics2D.OverlapCircle(groundCheck.position, GROUNDED_RADIUS, groundLayers);
 	}
 
 	void Start()
@@ -22,12 +22,13 @@ public class playermove00 : MonoBehaviour
 	}
 	void Update()
 	{
+		if (!canControl)
+			rbody.velocity = new Vector2(0, rbody.velocity.y);
 	}
 
 	public void disableControl()
 	{
 		canControl = false;
-		rbody.velocity = new Vector2(0, rbody.velocity.y);
 	}
 
 	public void enableControl()
@@ -39,7 +40,7 @@ public class playermove00 : MonoBehaviour
 		float movement = Input.GetAxis("Horizontal");
 		if (canControl)
 			rbody.velocity = new Vector2(movement * speed, rbody.velocity.y);
-		if (canControl && Input.GetKey("space") && isGrounded())
+		if (canControl && Input.GetKeyDown("space") && isGrounded())
 		{
 			rbody.velocity = new Vector2(rbody.velocity.x, jumpPower);
 		}

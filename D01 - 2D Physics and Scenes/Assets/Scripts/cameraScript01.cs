@@ -47,9 +47,5 @@ public class cameraScript01 : MonoBehaviour
 			transform.position = new Vector3(playerB.transform.position.x, playerB.transform.position.y, transform.position.z);
 		if (playerid == 3)
 			transform.position = new Vector3(playerC.transform.position.x, playerC.transform.position.y, transform.position.z);
-		if (Input.GetKey("r"))
-		{
-			SceneManager.LoadScene(1, LoadSceneMode.Single);
-		}
 	}
 }

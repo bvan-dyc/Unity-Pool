@@ -9,21 +9,24 @@ public class movingPlatform : MonoBehaviour
 	public float speed = 1.0f;
 	public float travelDuration = 2.0f;
 	private float timer = 0.0f;
+	private Rigidbody2D rbody;
     // Start is called before the first frame update
     void Start()
     {
 		timer = travelDuration;
-    }
+		rbody = GetComponent<Rigidbody2D>();
+		rbody.velocity = new Vector2(moveHorizontal ? speed : 0f, moveVertical ? speed : 0f);
+	}
 
 	// Update is called once per frame
-	void Update()
+	void FixedUpdate()
 	{
-		transform.Translate(moveHorizontal ? speed : 0f, moveVertical ? speed : 0f, 0);
 		timer -= Time.deltaTime;
 		if (timer <= 0)
 		{
 			speed = -speed;
 			timer = travelDuration;
+			rbody.velocity = new Vector2(moveHorizontal ? speed : 0f, moveVertical ? speed : 0f);
 		}
 	}
 }

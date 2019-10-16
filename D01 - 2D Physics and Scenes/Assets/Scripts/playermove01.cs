@@ -8,10 +8,12 @@ public class playermove01 : MonoBehaviour
 	public float jumpPower;
 	public LayerMask groundLayers;
 	public Transform groundCheck;
-	private const float GROUNDED_RADIUS = 0.3f;
+	private const float GROUNDED_RADIUS = 0.2f;
 	private Rigidbody2D rbody;
 	public bool escaped = false;
-
+	[SerializeField] [Range(0, 10)] private float fallMultiplier = 2f;
+	[SerializeField] [Range(0, 10)] private float lowJumpMultiplier = 2f;
+	private float gravityScale;
 	bool isGrounded()
 	{
 		return Physics2D.OverlapCircle(groundCheck.position, GROUNDED_RADIUS, groundLayers);
@@ -20,9 +22,11 @@ public class playermove01 : MonoBehaviour
 	void Start()
 	{
 		rbody = GetComponent<Rigidbody2D>();
+		gravityScale = rbody.gravityScale;
 	}
 	void Update()
 	{
+		gravityRig();
 		if (!canControl)
 			rbody.velocity = new Vector2(0, rbody.velocity.y);
 
@@ -38,6 +42,7 @@ public class playermove01 : MonoBehaviour
 	{
 		canControl = true;
 	}
+
 	void FixedUpdate()
 	{
 		float movement = Input.GetAxis("Horizontal");
@@ -59,5 +64,19 @@ public class playermove01 : MonoBehaviour
 	{
 		if (collider.tag == "Exit")
 			escaped = false;
+	}
+
+	private void gravityRig()
+	{
+		if (rbody.velocity.y < 0)
+		{
+			rbody.gravityScale = fallMultiplier * gravityScale;
+		}
+		else if (rbody.velocity.y > 0 && !Input.GetKey("space"))
+		{
+			rbody.gravityScale = lowJumpMultiplier * gravityScale;
+		}
+		else
+			rbody.gravityScale = gravityScale;
 	}
 }

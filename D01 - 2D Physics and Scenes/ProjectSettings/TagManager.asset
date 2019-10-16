@@ -11,6 +11,8 @@ TagManager:
   - Yellow
   - Blue
   - Red
+  - Trap
+  - Hole
   layers:
   - Default
   - TransparentFX
@@ -27,7 +29,7 @@ TagManager:
   - Yellow
   - Red
   - Blue
-  - 
+  - Teleporter
   - 
   - 
   - 

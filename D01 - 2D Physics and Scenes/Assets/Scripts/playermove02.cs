@@ -7,12 +7,15 @@ public class playermove02 : MonoBehaviour
 	private bool canControl = false;
 	public float jumpPower;
 	public LayerMask groundLayers;
+	public SpriteRenderer sprite;
 	public Transform groundCheck;
-	private const float GROUNDED_RADIUS = 0.3f;
+	private const float GROUNDED_RADIUS = 0.2f;
 	private Rigidbody2D rbody;
 	public bool escaped = false;
 	public bool isDead = false;
-
+	[SerializeField] [Range(0, 10)] private float fallMultiplier = 2f;
+	[SerializeField] [Range(0, 10)] private float lowJumpMultiplier = 2f;
+	private float gravityScale;
 	bool isGrounded()
 	{
 		return Physics2D.OverlapCircle(groundCheck.position, GROUNDED_RADIUS, groundLayers);
@@ -21,9 +24,11 @@ public class playermove02 : MonoBehaviour
 	void Start()
 	{
 		rbody = GetComponent<Rigidbody2D>();
+		gravityScale = rbody.gravityScale;
 	}
 	void Update()
 	{
+		gravityRig();
 		if (!canControl)
 			rbody.velocity = new Vector2(0, rbody.velocity.y);
 
@@ -53,13 +58,46 @@ public class playermove02 : MonoBehaviour
 
 	void OnTriggerEnter2D(Collider2D collider)
 	{
-		if (collider.tag == "Exit")
+		if (!escaped && collider.tag == "Exit")
 			escaped = true;
+		if (collider.tag == "Trap")
+			kill();
+		if (collider.tag == "Hole")
+			stopFollowing();
+
 	}
 
 	void OnTriggerExit2D(Collider2D collider)
 	{
-		if (collider.tag == "Exit")
+		if (escaped && collider.tag == "Exit")
 			escaped = false;
+	}
+
+	private void gravityRig()
+	{
+		if (rbody.velocity.y < 0)
+		{
+			rbody.gravityScale = fallMultiplier * gravityScale;
+		}
+		else if (rbody.velocity.y > 0 && !Input.GetKey("space"))
+		{
+			rbody.gravityScale = lowJumpMultiplier * gravityScale;
+		}
+		else
+			rbody.gravityScale = gravityScale;
+	}
+
+	public void kill()
+	{
+		isDead = true;
+		disableControl();
+		sprite.enabled = false;
+		rbody.constraints = RigidbodyConstraints2D.FreezeAll;
+	}
+
+	public void stopFollowing()
+	{
+		isDead = true;
+		disableControl();
 	}
 }
