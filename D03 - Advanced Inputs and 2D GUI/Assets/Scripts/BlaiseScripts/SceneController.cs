@@ -12,16 +12,16 @@ public class SceneController : MonoBehaviour
 	public gameManager manager;
 	private float score = 0;
 	public bool isLastLevel = false;
-
     void Update()
     {
         if (manager.playerHp <= 0)
 			lossScreen();
-		if (manager.lastWave)
+		if (manager.lastWave && score == 0)
 			victoryScreen();
     }
 	private void lossScreen()
 	{
+		score = 0;
 		manager.pause(true);
 		buttonText.text = "Retry";
 		scoreText.text = "0000";
@@ -48,7 +48,6 @@ public class SceneController : MonoBehaviour
 	}
 	private void computeScore()
 	{
-		float score = 0;
 		float healthDiff = manager.playerMaxHp - manager.playerHp;
 		if (healthDiff == 0)
 			score += 3000;
@@ -60,13 +59,13 @@ public class SceneController : MonoBehaviour
 			score += 1000;
 		else
 			score += 500;
-		if (manager.playerEnergy > 500)
+		if (manager.playerEnergy > 800)
 			score += 2000;
-		else if (manager.playerEnergy > 350)
+		else if (manager.playerEnergy > 550)
 			score += 1500;
-		else if (manager.playerEnergy > 200)
+		else if (manager.playerEnergy > 400)
 			score += 1000;
-		else if (manager.playerEnergy > 100)
+		else if (manager.playerEnergy > 200)
 			score += 500;
 		else
 			score += 0;
