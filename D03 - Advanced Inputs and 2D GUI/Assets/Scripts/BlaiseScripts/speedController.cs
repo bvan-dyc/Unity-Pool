@@ -14,7 +14,6 @@ public class speedController : MonoBehaviour
 	public void play()
 	{
 		manager.pause(false);
-		manager.changeSpeed(1.0f);
 	}
 
 	public void speedUp(float speedMult)
