@@ -4,7 +4,7 @@
 Various simple minigames including Flappy Bird and Pong (Unity basics)
 
 ### D01
-Puzzle Game about combining different shapes to unlock new paths
+Puzzle Game about combining different shapes to unlock new paths (2D Physics and Scene Management)
 
 ### D02
 Warcraft-themed minigame (Audio, Animation and Events)
@@ -25,10 +25,13 @@ Stealth minigame with cameras and detection jauge (Shaders, Lights, 3D Sound)
 Tank battle minigame (AI, 3D Physics, 3D GUI)
 
 ### D08
-3rd Person minigame inspired by Bordderlands (3D Animations, NavMesh)
+3rd Person Hack and Slash (3D Animations, NavMesh)
 
 ### D09
 First Person Shooter
 
 ### Rush00
 2D game based on Hotline Miami
+
+### Rush01
+3D Action RPG
