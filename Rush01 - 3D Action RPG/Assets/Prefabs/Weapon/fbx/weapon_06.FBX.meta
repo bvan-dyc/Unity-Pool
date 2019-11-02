@@ -1,0 +1,293 @@
+fileFormatVersion: 2
+guid: 721c79053c39d9b44ac17aadeb7b7ba9
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ax
+    100004: Bip001
+    100006: Bip001 Footsteps
+    100008: Bip001 Head
+    100010: Bip001 HeadNub
+    100012: Bip001 L Calf
+    100014: Bip001 L Clavicle
+    100016: Bip001 L Finger0
+    100018: Bip001 L Finger01
+    100020: Bip001 L Finger0Nub
+    100022: Bip001 L Finger1
+    100024: Bip001 L Finger11
+    100026: Bip001 L Finger1Nub
+    100028: Bip001 L Finger2
+    100030: Bip001 L Finger21
+    100032: Bip001 L Finger2Nub
+    100034: Bip001 L Foot
+    100036: Bip001 L Forearm
+    100038: Bip001 L Hand
+    100040: Bip001 L Thigh
+    100042: Bip001 L Toe0
+    100044: Bip001 L Toe0Nub
+    100046: Bip001 L UpperArm
+    100048: Bip001 Neck
+    100050: Bip001 Pelvis
+    100052: Bip001 R Calf
+    100054: Bip001 R Clavicle
+    100056: Bip001 R Finger0
+    100058: Bip001 R Finger01
+    100060: Bip001 R Finger0Nub
+    100062: Bip001 R Finger1
+    100064: Bip001 R Finger11
+    100066: Bip001 R Finger1Nub
+    100068: Bip001 R Finger2
+    100070: Bip001 R Finger21
+    100072: Bip001 R Finger2Nub
+    100074: Bip001 R Foot
+    100076: Bip001 R Forearm
+    100078: Bip001 R Hand
+    100080: Bip001 R Thigh
+    100082: Bip001 R Toe0
+    100084: Bip001 R Toe0Nub
+    100086: Bip001 R UpperArm
+    100088: Bip001 Spine
+    100090: Bip001 Spine1
+    100092: Bone001
+    100094: Bone001(mirrored)
+    100096: Bone002
+    100098: Bone002(mirrored)
+    100100: Bone003
+    100102: Circle001
+    100104: Cylinder001
+    100106: Cylinder002
+    100108: Cylinder003
+    100110: Dummy002
+    100112: frog
+    100114: Group53229
+    100116: Line002
+    100118: Line003
+    100120: Object002
+    100122: Object004
+    100124: Object005
+    100126: Object008
+    100128: Object010
+    100130: soldier
+    100132: Sphere001
+    100134: SShape002
+    100136: wood_weapon
+    100138: "\xA1\xA1\xD7\xFD\xD7\xFB"
+    100140: "\xD7\xFE\xD7\xFC"
+    100142: aura
+    400000: //RootNode
+    400002: ax
+    400004: Bip001
+    400006: Bip001 Footsteps
+    400008: Bip001 Head
+    400010: Bip001 HeadNub
+    400012: Bip001 L Calf
+    400014: Bip001 L Clavicle
+    400016: Bip001 L Finger0
+    400018: Bip001 L Finger01
+    400020: Bip001 L Finger0Nub
+    400022: Bip001 L Finger1
+    400024: Bip001 L Finger11
+    400026: Bip001 L Finger1Nub
+    400028: Bip001 L Finger2
+    400030: Bip001 L Finger21
+    400032: Bip001 L Finger2Nub
+    400034: Bip001 L Foot
+    400036: Bip001 L Forearm
+    400038: Bip001 L Hand
+    400040: Bip001 L Thigh
+    400042: Bip001 L Toe0
+    400044: Bip001 L Toe0Nub
+    400046: Bip001 L UpperArm
+    400048: Bip001 Neck
+    400050: Bip001 Pelvis
+    400052: Bip001 R Calf
+    400054: Bip001 R Clavicle
+    400056: Bip001 R Finger0
+    400058: Bip001 R Finger01
+    400060: Bip001 R Finger0Nub
+    400062: Bip001 R Finger1
+    400064: Bip001 R Finger11
+    400066: Bip001 R Finger1Nub
+    400068: Bip001 R Finger2
+    400070: Bip001 R Finger21
+    400072: Bip001 R Finger2Nub
+    400074: Bip001 R Foot
+    400076: Bip001 R Forearm
+    400078: Bip001 R Hand
+    400080: Bip001 R Thigh
+    400082: Bip001 R Toe0
+    400084: Bip001 R Toe0Nub
+    400086: Bip001 R UpperArm
+    400088: Bip001 Spine
+    400090: Bip001 Spine1
+    400092: Bone001
+    400094: Bone001(mirrored)
+    400096: Bone002
+    400098: Bone002(mirrored)
+    400100: Bone003
+    400102: Circle001
+    400104: Cylinder001
+    400106: Cylinder002
+    400108: Cylinder003
+    400110: Dummy002
+    400112: frog
+    400114: Group53229
+    400116: Line002
+    400118: Line003
+    400120: Object002
+    400122: Object004
+    400124: Object005
+    400126: Object008
+    400128: Object010
+    400130: soldier
+    400132: Sphere001
+    400134: SShape002
+    400136: wood_weapon
+    400138: "\xA1\xA1\xD7\xFD\xD7\xFB"
+    400140: "\xD7\xFE\xD7\xFC"
+    400142: aura
+    2100000: 'Material #64'
+    2300000: //RootNode
+    2300002: ax
+    2300004: Circle001
+    2300006: Cylinder001
+    2300008: Cylinder002
+    2300010: Cylinder003
+    2300012: Group53229
+    2300014: Line002
+    2300016: Line003
+    2300018: Object002
+    2300020: Object004
+    2300022: Object005
+    2300024: Object008
+    2300026: Object010
+    2300028: soldier
+    2300030: Sphere001
+    2300032: SShape002
+    2300034: wood_weapon
+    2300036: aura
+    3300000: //RootNode
+    3300002: ax
+    3300004: Circle001
+    3300006: Cylinder001
+    3300008: Cylinder002
+    3300010: Cylinder003
+    3300012: Group53229
+    3300014: Line002
+    3300016: Line003
+    3300018: Object002
+    3300020: Object004
+    3300022: Object005
+    3300024: Object008
+    3300026: Object010
+    3300028: soldier
+    3300030: Sphere001
+    3300032: SShape002
+    3300034: wood_weapon
+    3300036: aura
+    4300000: Line003
+    4300002: frog
+    4300004: wood_weapon
+    4300006: ax
+    4300008: Object002
+    4300010: Cylinder001
+    4300012: Sphere001
+    4300014: Group53229
+    4300016: soldier
+    4300018: SShape002
+    4300020: Object004
+    4300022: Cylinder002
+    4300024: Object005
+    4300026: Circle001
+    4300028: Cylinder003
+    4300030: Object008
+    4300032: Object010
+    4300034: Line002
+    4300036: aura
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: frog
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.099999994
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

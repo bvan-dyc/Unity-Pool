@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &1900193077033343191
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4974537795877564636, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_Name
+      value: GodAuraSkill
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4974537795877564643, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 692308347500504414, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: skillName
+      value: God Aura
+      objectReference: {fileID: 0}
+    - target: {fileID: 692308347500504414, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: cost
+      value: 175
+      objectReference: {fileID: 0}
+    - target: {fileID: 692308347500504414, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: dps
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 692308347500504414, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: tooltip
+      value: A divine aura that burns enemy in the area with 100 damage per second.
+      objectReference: {fileID: 0}
+    - target: {fileID: 692308347500504414, guid: 5472d3dffc1486643a59b4d5014a4772,
+        type: 3}
+      propertyPath: effectPrefab
+      value: 
+      objectReference: {fileID: 2633559663578580554, guid: 086cb1d9818ede2428202d6e911d2cf7,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5472d3dffc1486643a59b4d5014a4772, type: 3}

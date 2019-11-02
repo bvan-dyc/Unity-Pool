@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5553647626485215492
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2635735723646900754, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_Name
+      value: GigaBoom II
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2635735723646900781, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307434006079576513, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: upgrade
+      value: 
+      objectReference: {fileID: 4660014482235823053, guid: 0e8c0e4ed07aef64ab22e4409ce6f82c,
+        type: 3}
+    - target: {fileID: 4307434006079576513, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: cost
+      value: 110
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307434006079576513, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: damage
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307434006079576513, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd,
+        type: 3}
+      propertyPath: tooltip
+      value: The summum of explosive Art. A world shattering explosion that deals
+        350 damage to any enemy in it's radius.
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fdb5a6f6c181f0747a8dae7cc2ecb0dd, type: 3}

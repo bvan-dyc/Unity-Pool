@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6704670607626106140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6704670607626106147}
+  - component: {fileID: 450481268103333590}
+  m_Layer: 0
+  m_Name: IceLance I
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6704670607626106147
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704670607626106140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &450481268103333590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6704670607626106140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de2ceddb681313e4f9f4e29f93bfda7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 1
+  maxLevel: 5
+  skillName: Ice Lance I
+  type: 0
+  tooltip: A spear of ice that pierces trough ennemies dealing them 15 damage.
+  upgrade: {fileID: 6260707169433947587, guid: 47173ada3a3b75c40b264c63a3501c51, type: 3}
+  OnSkillActivated:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: ActiveSkill+ActivateEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  effectPrefab: {fileID: 3244463897971509565, guid: a51415c13076d3447aaf25aadbafab99,
+    type: 3}
+  activeType: 2
+  cost: 10
+  debug_activateSkill: 0
+  user: {fileID: 0}
+  target: {fileID: 0}
+  damage: 15
+  damageDelay: 0.5
+  targetOffset_y: 0.35

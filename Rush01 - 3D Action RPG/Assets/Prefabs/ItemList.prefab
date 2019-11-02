@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4040906834855632738
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4040906834855632748}
+  - component: {fileID: 4040906834855632749}
+  m_Layer: 0
+  m_Name: ItemList
+  m_TagString: ItemList
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4040906834855632748
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040906834855632738}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 114.97997, y: -0.9524231, z: -6.0686436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4040906834855632749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040906834855632738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea125ffb2b33447ebac1b7c9beb54b21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabs:
+  - {fileID: 1134642895595984, guid: 82410a365954de84cbe89befbe23ffae, type: 3}
+  - {fileID: 1051142867077894, guid: 603a80c0b900ca34f966599f68a9e0c5, type: 3}
+  - {fileID: 1367830383211074, guid: b7789f0fc293e1d4385e026cdd06481a, type: 3}
+  - {fileID: 1334946167370240, guid: e71ebfcae1dc6b9438f9edfc5fe334b8, type: 3}
+  - {fileID: 1702945505949426, guid: 5e9d1b73e79fcb64a9350eec3495e086, type: 3}
+  - {fileID: 1873407118302374, guid: 294d1a78fd692c8458638a6fa23345b6, type: 3}
+  - {fileID: 1160547565976780, guid: 7617ce5a3a1fc7b48ba803b12650d3fe, type: 3}
+  - {fileID: 1918853560935132, guid: b665e7d05def39a48b935c0f2c1f21f8, type: 3}
+  - {fileID: 1001171344669682, guid: a8ba5aa72b8d7304e87b45bc71f79f08, type: 3}
+  spawnedItems: []

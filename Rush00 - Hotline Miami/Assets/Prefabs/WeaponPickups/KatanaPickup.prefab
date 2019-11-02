@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3640989927055769597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7595021600680451710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ec4cd15eb52d646a931cff578d062a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnDamageableHit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Damager+DamagableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  OnNonDamageableHit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Damager+NonDamagableEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+--- !u!1001 &9479309400584705
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7586105242441460863, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_Name
+      value: KatanaPickup
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517230997378332848, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402352104851207740, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: pickUpWeapon
+      value: 
+      objectReference: {fileID: 8075705568038047625, guid: 9ccbf2c212ef08e44a0e381a9bf3967b,
+        type: 3}
+    - target: {fileID: 2402352104851207740, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: canDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2402352104851207740, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: damager
+      value: 
+      objectReference: {fileID: 3640989927055769597}
+    - target: {fileID: 6290095746516547055, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.00010305643
+      objectReference: {fileID: 0}
+    - target: {fileID: 6290095746516547055, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.1104218
+      objectReference: {fileID: 0}
+    - target: {fileID: 5859898520370303202, guid: f99800d05cc21c34aae659a4ca439478,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f47402979bf234b2d8a7c4f680d637d0,
+        type: 3}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f99800d05cc21c34aae659a4ca439478, type: 3}
+--- !u!1 &7595021600680451710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7586105242441460863, guid: f99800d05cc21c34aae659a4ca439478,
+    type: 3}
+  m_PrefabInstance: {fileID: 9479309400584705}
+  m_PrefabAsset: {fileID: 0}

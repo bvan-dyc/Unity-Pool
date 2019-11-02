@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Bounds
+  - Weapon
+  - Enemy
+  - Score
+  - WeaponDetails
+  - Exit
+  - Play
+  - Title
+  - Menu
+  - Car
+  - Bullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Pickup
+  - Enemy
+  - Player
+  - PlayerBullet
+  - EnemyBullet
+  - IgnoreCharacters
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - IgnoreEverything
+  m_SortingLayers:
+  - name: Background
+    uniqueID: 1684426627
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 2230182173
+    locked: 0
+  - name: UI
+    uniqueID: 388693499
+    locked: 0

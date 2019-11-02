@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &838762136674771953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 153091242671107878, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_Name
+      value: Boom III
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 153091242671107865, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: cost
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: level
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: upgrade
+      value: 
+      objectReference: {fileID: 1062900688059638396, guid: 8e4d049ddd8f6ce4a8c88a6ed880cf93,
+        type: 3}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: damage
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: tooltip
+      value: A small explosion that deals 40 damage to any enemy in it's radius.
+      objectReference: {fileID: 0}
+    - target: {fileID: 2111331060253601013, guid: e73634fbf4a5618458d69a4408749341,
+        type: 3}
+      propertyPath: skillName
+      value: Boom III
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e73634fbf4a5618458d69a4408749341, type: 3}
