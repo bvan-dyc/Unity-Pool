@@ -2,7 +2,7 @@
 
 ### D00
 Various simple minigames including Flappy Bird and Pong (Unity basics)
-![d00_screen](https://postimg.cc/N5xDKMQW)
+![d00_screen](https://i.postimg.cc/9F6nNRKF/flappy.png)
 
 ### D01
 Puzzle Game about combining different shapes to unlock new paths (2D Physics and Scene Management)
