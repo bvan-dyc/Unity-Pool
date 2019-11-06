@@ -5,14 +5,12 @@ using UnityEngine;
 public class solidRing : MonoBehaviour
 {
 	private Rigidbody2D rbody;
-	public int impulsePower = 1;
 	private float timer = 0;
+    public Collider2D coinCollider;
+
     void Start()
     {
-		Random.seed = System.DateTime.Now.Millisecond;
-		rbody = GetComponent<Rigidbody2D>();
-		Vector2 randomDirection = new Vector2(Random.Range(-0.9f, 0.9f), Random.Range(0.3f, 1f));
-		rbody.AddForce(impulsePower * randomDirection, ForceMode2D.Impulse);
+        Invoke("makeCoin", 0.5f);
     }
 
     // Update is called once per frame
@@ -25,10 +23,13 @@ public class solidRing : MonoBehaviour
 		}
 		if (timer >= 4)
 		{
-			GameObject.Destroy(gameObject);
+			Destroy(gameObject);
 		}
     }
-
+    private void makeCoin()
+    {
+        coinCollider.enabled = true;
+    }
 	IEnumerator isBlinking()
 	{
 		SpriteRenderer sr = GetComponent<SpriteRenderer>();

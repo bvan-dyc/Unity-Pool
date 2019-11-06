@@ -33,9 +33,9 @@ public class victoryScript02 : MonoBehaviour
 								playerB.GetComponent<playermove02>().escaped && 
 								playerC.GetComponent<playermove02>().escaped))
 			victory = false;
-		if (gameOver == false && playerA.GetComponent<playermove02>().isDead ||
+		if (gameOver == false && (playerA.GetComponent<playermove02>().isDead ||
 								playerB.GetComponent<playermove02>().isDead ||
-								playerC.GetComponent<playermove02>().isDead)
+                                  playerC.GetComponent<playermove02>().isDead))
 		{
 			Debug.Log("One of your rectangles is dead... Reload with 'r'");
 			gameOver = true;

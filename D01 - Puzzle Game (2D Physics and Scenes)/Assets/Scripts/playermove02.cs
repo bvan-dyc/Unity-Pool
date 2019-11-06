@@ -93,6 +93,7 @@ public class playermove02 : MonoBehaviour
 		disableControl();
 		sprite.enabled = false;
 		rbody.constraints = RigidbodyConstraints2D.FreezeAll;
+        GetComponent<Collider2D>().isTrigger = true;
 	}
 
 	public void stopFollowing()

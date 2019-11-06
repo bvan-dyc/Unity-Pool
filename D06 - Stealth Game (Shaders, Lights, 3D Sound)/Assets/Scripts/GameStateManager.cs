@@ -22,7 +22,8 @@ public class GameStateManager : MonoBehaviour
 	public AudioClip alertTheme;
 	public AudioClip endClip;
 	public Image fadeScreen;
-	private string currentText;
+    private string currentMainText;
+    private string currentText;
 	private bool gameEnded = false;
 	private playerState nextTarget = playerState.Start;
 	private bool alert = false;
@@ -36,6 +37,7 @@ public class GameStateManager : MonoBehaviour
 	private void Start()
 	{
 		player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        StartCoroutine(ImageFadeOut(fadeScreen, 4f));
 	}
 	void Update()
     {
@@ -63,17 +65,17 @@ public class GameStateManager : MonoBehaviour
 	{
 		if (nextTarget == playerState.Start)
 		{
-			StartCoroutine(showTextThenFade("The blueprints are hidden in this building. Find them.", subtext, 0.07f, 7));
+			StartCoroutine(showTextThenFade("The blueprints are hidden in this building. Find them.", subtext, 0.05f, 7));
 			nextTarget = playerState.hasKey;
 		}
 		else if (nextTarget == playerState.hasKey && player.playerHasKey())
 		{
-			StartCoroutine(showTextThenFade("Well done Johnny, now go open that door.", subtext, 0.07f, 7));
+			StartCoroutine(showTextThenFade("Well done Johnny, now go open that door.", subtext, 0.05f, 7));
 			nextTarget = playerState.hasDocuments;
 		}
 		else if (nextTarget == playerState.hasDocuments && player.playerHasDocuments())
 		{
-			StartCoroutine(showTextThenFade("Great! There should be an elevator nearby that will lead you right out.", subtext, 0.07f, 7));
+			StartCoroutine(showTextThenFade("Great! There should be an elevator nearby that will lead you right out.", subtext, 0.05f, 7));
 			nextTarget = playerState.Escaped;
 		}
 	}
@@ -87,7 +89,7 @@ public class GameStateManager : MonoBehaviour
 	{
 		subtext.color = new Color(subtext.color.r, subtext.color.g, subtext.color.b, 1);
 		gameEnd();
-		StartCoroutine(ShowText(lossString, mainText, 0.15f));
+		StartCoroutine(ShowMainText(lossString, mainText, 0.15f));
 		StartCoroutine(ShowText(lossSubString, subtext, 0.1f));
 		Invoke("reload", reloadDelay);
 	}
@@ -96,25 +98,31 @@ public class GameStateManager : MonoBehaviour
 	{
 		subtext.color = new Color(subtext.color.r, subtext.color.g, subtext.color.b, 1);
 		gameEnd();
-		StartCoroutine(ShowText(victoryString, mainText, 0.15f));
+		StartCoroutine(ShowMainText(victoryString, mainText, 0.15f));
 		StartCoroutine(ShowText(victorySubString, subtext, 0.1f));
 		Invoke("reload", reloadDelay * 2);
 	}
 
 	public void gameEnd()
 	{
+		gameEnded = true;
 		inputManager.canControl = false;
 		player.freeze();
 		StartCoroutine(ImageFadeIn(fadeScreen, 4f));
 	}
 
-	public void clearSubText()
+    private IEnumerator ShowMainText(string fullText, Text textToChange, float delay)
+    {
+        for (int i = 0; i <= fullText.Length; i++)
+        {
+            currentMainText = fullText.Substring(0, i);
+            textToChange.text = currentMainText;
+            yield return new WaitForSeconds(delay);
+        }
+    }
+    private IEnumerator ShowText(string fullText, Text textToChange, float delay)
 	{
-		subtext.text = "";
-	}
-	IEnumerator ShowText(string fullText, Text textToChange, float delay)
-	{
-		for (int i = 0; i <= fullText.Length; i++)
+        for (int i = 0; i <= fullText.Length; i++)
 		{
 			currentText = fullText.Substring(0, i);
 			textToChange.text = currentText;
@@ -122,7 +130,7 @@ public class GameStateManager : MonoBehaviour
 		}
 	}
 
-	IEnumerator TextFade(Text textToFade)
+    private IEnumerator TextFade(Text textToFade)
 	{
 		float fadeOutDuration = 0.5f;
 		Color mColor = textToFade.color;
@@ -133,7 +141,7 @@ public class GameStateManager : MonoBehaviour
 		}
 	}
 
-	IEnumerator ImageFadeIn(Image imageToFade, float fadeInDuration)
+    private IEnumerator ImageFadeIn(Image imageToFade, float fadeInDuration)
 	{
 		Color mColor = imageToFade.color;
 		for (float t = 0.01f; t < fadeInDuration; t += Time.deltaTime)
@@ -143,7 +151,17 @@ public class GameStateManager : MonoBehaviour
 		}
 	}
 
-	IEnumerator showTextThenFade(string fullText, Text textToChange, float showCdelay, float delay)
+    private IEnumerator ImageFadeOut(Image imageToFade, float fadeDuration)
+    {
+        Color mColor = imageToFade.color;
+        for (float t = 0.01f; t < fadeDuration; t += Time.deltaTime)
+        {
+            imageToFade.color = Color.Lerp(mColor, new Color(mColor.r, mColor.g, mColor.b, 0), Mathf.Min(1, t / fadeDuration));
+            yield return null;
+        }
+    }
+
+    private IEnumerator showTextThenFade(string fullText, Text textToChange, float showCdelay, float delay)
 	{
 		StartCoroutine(ShowText(fullText, textToChange, showCdelay));
 		yield return new WaitForSeconds(delay);

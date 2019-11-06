@@ -2222,7 +2222,7 @@ MonoBehaviour:
     type: 3}
   bulletSpeed: -5
   nextShotTime: 1
-  nextShotSpawnGap: 2.7
+  nextShotSpawnGap: 3
 --- !u!4 &974642039
 Transform:
   m_ObjectHideFlags: 0
@@ -2857,7 +2857,7 @@ PrefabInstance:
     - target: {fileID: 7437447887870320607, guid: a54514bdab3073548a51c8af54486bc7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.952
+      value: 1.689
       objectReference: {fileID: 0}
     - target: {fileID: 7437447887870320607, guid: a54514bdab3073548a51c8af54486bc7,
         type: 3}
@@ -2917,7 +2917,7 @@ PrefabInstance:
     - target: {fileID: 7437447887870320607, guid: a54514bdab3073548a51c8af54486bc7,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.6270158
+      value: 0.8444795
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a54514bdab3073548a51c8af54486bc7, type: 3}

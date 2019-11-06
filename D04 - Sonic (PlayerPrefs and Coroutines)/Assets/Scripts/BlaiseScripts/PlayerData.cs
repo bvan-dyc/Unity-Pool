@@ -39,7 +39,7 @@ public class PlayerData : MonoBehaviour
 		PlayerPrefs.SetInt("ringCount", ringCount + newRings);
 		PlayerPrefs.SetInt(levelName + "_score", newScore);
 		if (SceneManager.GetActiveScene().buildIndex - 1 >= totalLevelsUnlocked)
-			PlayerPrefs.SetInt("totalLevelsUnlocked", totalLevelsUnlocked++);
+			PlayerPrefs.SetInt("totalLevelsUnlocked", totalLevelsUnlocked + 1);
 
 	}
 }

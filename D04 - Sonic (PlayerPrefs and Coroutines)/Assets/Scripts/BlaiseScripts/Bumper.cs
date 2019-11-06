@@ -8,6 +8,7 @@ public class Bumper : MonoBehaviour
 	public int boostY = 0;
 	public Animator animator;
 	public AudioSource aBumper;
+
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		if(collision.gameObject.tag == "Player")

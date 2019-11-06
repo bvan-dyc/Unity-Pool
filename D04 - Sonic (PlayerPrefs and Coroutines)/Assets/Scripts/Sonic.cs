@@ -12,6 +12,7 @@ public class Sonic : MonoBehaviour
 	public float		maxSpeed;
 	public float		jumpHeight;
 	public float		rollingBoost;
+    public float coinImpulse = 15f;
 
 	private Animator	animator;
 	private Rigidbody2D	rbody;
@@ -268,9 +269,11 @@ public class Sonic : MonoBehaviour
 				float ringsToSpawn = rings / 2;
 				while (ringsToSpawn > 0)
 				{
-					solidCoin.transform.position = transform.position;
-					Instantiate(solidCoin);
-					ringsToSpawn--;
+					GameObject newCoin = Instantiate(solidCoin);
+                    newCoin.transform.position = transform.position;
+                    Vector2 randomDirection = new Vector2(Random.Range(-0.9f, 0.9f), Random.Range(0.3f, 1f));
+                    newCoin.GetComponent<Rigidbody2D>().AddForce(coinImpulse * randomDirection, ForceMode2D.Impulse);
+                    ringsToSpawn--;
 				}
 				rings = 0;
 			}
@@ -279,7 +282,7 @@ public class Sonic : MonoBehaviour
 
 	void stopHit() {
 		isHit = false;
-	}
+    }
 
 	void dead(){
 		deathCount++;

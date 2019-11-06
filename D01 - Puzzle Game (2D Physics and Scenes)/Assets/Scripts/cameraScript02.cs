@@ -20,14 +20,14 @@ public class cameraScript02 : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
-		if (Input.GetKey("1") && !playerC.GetComponent<playermove02>().isDead)
+		if (Input.GetKey("1") && !playerA.GetComponent<playermove02>().isDead)
 		{
 			playerid = 1;
 			playerA.GetComponent<playermove02>().enableControl();
 			playerB.GetComponent<playermove02>().disableControl();
 			playerC.GetComponent<playermove02>().disableControl();
 		}
-		if (Input.GetKey("2") && !playerC.GetComponent<playermove02>().isDead)
+		if (Input.GetKey("2") && !playerB.GetComponent<playermove02>().isDead)
 		{
 			playerid = 2;
 			playerA.GetComponent<playermove02>().disableControl();
