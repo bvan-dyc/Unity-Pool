@@ -17,7 +17,7 @@ Tower Defense minigame with drag and drop interface (Advanced Inputs and 2D GUI)
 ![d03_screen](https://i.postimg.cc/NfncGjnW/towerdefense.jpg)
 
 ### D04
-Basic Sonic Level (PlayerPrefs and Coroutines)
+Basic Sonic Levels and Menus (PlayerPrefs and Coroutines)
 ![d04_screen](https://i.postimg.cc/K8tHXch7/sanic.jpg)
 
 ### D05
