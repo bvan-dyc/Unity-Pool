@@ -30,7 +30,7 @@ Stealth minigame with cameras and detection jauge (Shaders, Lights, 3D Sound)
 
 ### D07
 Tank battle minigame (AI, 3D Physics, 3D GUI)
-
+![d07_screen](https://i.postimg.cc/TP0YPt9W/tank.png)
 ### D08
 3rd Person Hack and Slash (3D Animations, NavMesh)
 
@@ -43,3 +43,4 @@ First Person Shooter
 
 ### Rush01
 3D Action RPG
+![rush01_screen](https://i.postimg.cc/bYMHmghP/arpg.png)
